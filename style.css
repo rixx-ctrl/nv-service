@@ -572,14 +572,16 @@ footer {
 
 .whatsapp-button {
     position: fixed;
-    right: 18px;
-    bottom: 18px;
+    right: 20px;
+    bottom: 20px;
     z-index: 9999;
 
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
 
+    border-radius: 50%;
     background: #25D366;
     color: white;
 
@@ -587,7 +589,7 @@ footer {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
     transition: transform 0.2s ease;
 }
@@ -601,20 +603,8 @@ footer {
 }
 
 .whatsapp-icon {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     fill: white;
-}
-
-@media (max-width: 560px) {
-    .whatsapp-button {
-        right: 16px;
-        bottom: 16px;
-        padding: 13px 17px;
-    }
-
-    .whatsapp-icon {
-        width: 23px;
-        height: 23px;
-    }
+    display: block;
 }
