@@ -203,14 +203,14 @@
             link.addEventListener('click', () => {
                 const target = document.querySelector(link.getAttribute('href'));
 
-                link.classList.remove('is-clicked');
+                link.classList.remove('nav-clicked');
                 void link.offsetWidth;
-                link.classList.add('is-clicked');
+                link.classList.add('nav-clicked');
 
                 if (target) {
-                    target.classList.remove('section-highlight');
+                    target.classList.remove('section-focus');
                     void target.offsetWidth;
-                    target.classList.add('section-highlight');
+                    target.classList.add('section-focus');
                 }
             });
         });
