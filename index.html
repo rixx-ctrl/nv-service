@@ -195,5 +195,25 @@
     <footer>
         <div class="container">© 2026 Nova Service. All rights reserved.</div>
     </footer>
+    
+     <script>
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                const target = document.querySelector(link.getAttribute('href'));
+
+                link.classList.remove('is-clicked');
+                void link.offsetWidth;
+                link.classList.add('is-clicked');
+
+                if (target) {
+                    target.classList.remove('section-highlight');
+                    void target.offsetWidth;
+                    target.classList.add('section-highlight');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
