@@ -562,3 +562,11 @@ footer {
         width: 100%;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-links a.nav-clicked,
+    .section-focus {
+        animation: none;
+    }
+}
+
